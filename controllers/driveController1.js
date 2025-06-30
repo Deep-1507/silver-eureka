@@ -13,7 +13,7 @@ const User = require("../modals/userModal.js")
 const signupBody = z.object({ 
   username: z.string().email(),
   firstName: z.string().min(1),
-  lastName: z.string().min(1),
+  lastName: z.string(),
   teamName: z.string().min(1),
   position: z.string().min(1),
   password: z.string().min(6),
